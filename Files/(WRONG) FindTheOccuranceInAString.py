@@ -1,3 +1,4 @@
+#note i didnt read the prompt correctly :skull: 
 class Solution(object):
     haystack = "leetcode"
     needle = "leeto"
@@ -9,8 +10,8 @@ class Solution(object):
                 self = haystack.find(needle, tempVal, len(haystack))
                 tempVal += len(needle) + 1
                 if self == -1:
-                    return
-                print(self)
+                    return self
+                (self)
         else:
             self = -1
         print(self)
