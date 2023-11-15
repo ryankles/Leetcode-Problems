@@ -1,13 +1,11 @@
 class Solution(object):
-    haystack = "sadbutsad"
-    needle = "sad"
-    location = ""
+    haystack = "leetcode"
+    needle = "leeto"
     def strStr(haystack, needle):
-        tempVal = 0
         if needle in haystack:
-            for i in range(len(haystack)):
-                location = haystack.index(needle, tempVal, len(haystack))
-                print(location)
-
+            self = haystack.find(needle, 0, len(haystack))
+        else:
+            self = -1
+        return self
     strStr(haystack, needle)
             
