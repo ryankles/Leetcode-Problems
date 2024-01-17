@@ -16,13 +16,13 @@ class Solution(object):
                 else:
                     return 'Pending'
         else: 
-            for i in range(len(moves)-2):
+            for i in range(len(moves)-3):
                 value = moves[i][i]
                 value2 = moves[i][i]
                 if moves[i][i] == value:
-                    continue
+                    return "A"
                 elif moves[i][i+1] == value2:
-                    continue
+                    return "A"
                 else:
                     return 'Pending'
     print(tictactoe(moves))
