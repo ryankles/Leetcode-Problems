@@ -6,6 +6,5 @@ class Solution(object):
         new2 = new[::-1]
         if nums != new or nums != new2:
             print("false")
-            break
         print("true")        
     isMonotonic(nums)

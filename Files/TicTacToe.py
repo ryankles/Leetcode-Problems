@@ -1,5 +1,6 @@
 class Solution(object):
-    moves = [[1,0],[2,2],[2,0],[0,1],[1,1]]
+    moves = [[2,2],[0,1],[2,1],[0,0],[0,2]]
+    print(len(moves))
     def tictactoe(moves):
         if len(moves) == 9:
             return 'Draw'
@@ -13,6 +14,7 @@ class Solution(object):
                     return "B"
                 elif moves[i+1][i+1] == value2:
                     return "B"
+                
                 else:
                     return 'Pending'
         else: 
