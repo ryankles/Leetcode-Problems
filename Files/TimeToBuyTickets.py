@@ -10,6 +10,7 @@ class solution:
                 else:
                     tickets[i] -= 1
                     if tickets[k] == 0:
+                        time += 1
                         break
                     time += 1
         return time
